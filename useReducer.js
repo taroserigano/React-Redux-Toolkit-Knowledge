@@ -33,8 +33,9 @@ export const AlertProvider = ({ children }) => {
   }
 }
 
-
-
+      // fetch users, and then add them to the state like this 
+      const users = await searchUsers(text)
+      dispatch({ type: 'GET_USERS', payload: users })
 
 
 
