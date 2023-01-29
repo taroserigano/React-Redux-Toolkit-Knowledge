@@ -5,7 +5,11 @@ state.tickets = action.payload (tickers response go here)
 
 - add initialState 
 
-- define methods under reducers 
+- declare methods under reducers 
+
+- handle state management / changes under ExtraReducers 
+
+
 
 const cartSlice = createSlice({
   name: 'cart',
