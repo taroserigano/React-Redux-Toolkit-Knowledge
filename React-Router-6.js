@@ -19,7 +19,10 @@
               
               
           </Route>
-
+          
+          // if you log in, <Login> will navigate you to "/dashboard" 
+          // inside there, the <ProtectedRoute> checks if (user?), 
+          // if yes,     return <Navigate to='/' />;
           <Route path='login' element={<Login setUser={setUser}></Login>} />
           
           // this URL will be hidden and only accessible from <Login> component that willl directs 
